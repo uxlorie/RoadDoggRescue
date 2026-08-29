@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adoption Application | Road Dogg Rescue</title>
+  <meta name="description" content="Apply to adopt a rescue dog from Road Dogg Rescue. Learn about our adoption process and start your application today." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="images/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="nav__brand" href="index.html">
+        <img class="brand-logo" src="images/logo.png" alt="Road Dogg Rescue logo" />
+        <span class="nav__brand-name">Road Dogg Rescue <small>Fort Walton Beach, FL</small></span>
+      </a>
+      <button class="nav__toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="adopt.html" class="is-active">Adopt</a></li>
+        <li><a href="foster-volunteer.html">Foster &amp; Volunteer</a></li>
+        <li><a href="info.html">Information</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="btn btn--primary" href="donate.html">Pay / Donate</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Adoption Application</span>
+        <h1>Find your new best friend</h1>
+        <p>Adopting a rescue dog is a wonderful, life-changing decision. Here's how our process works and how to get started.</p>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">How Adoption Works</span>
+          <h2>Five simple steps to adopt</h2>
+        </div>
+        <ol class="steps" style="max-width:720px;margin:0 auto;">
+          <li>
+            <h3>Browse available dogs</h3>
+            <p>Meet our current adoptable pups on the <a href="index.html#available">home page</a>. New dogs are added often.</p>
+          </li>
+          <li>
+            <h3>Submit your application</h3>
+            <p>Fill out our <a href="https://airtable.com/appaujP3UnYFLkfnw/shrwWYoKGmnW3tB7M" target="_blank" rel="noopener">online adoption application</a> so we can learn about your home and lifestyle.</p>
+          </li>
+          <li>
+            <h3>Meet &amp; greet</h3>
+            <p>We'll connect you with the dog's foster to arrange a meet-and-greet and answer your questions.</p>
+          </li>
+          <li>
+            <h3>Adoption approval</h3>
+            <p>Once your application is reviewed and approved, we'll confirm your adoption and share next steps.</p>
+          </li>
+          <li>
+            <h3>Complete your adoption contract</h3>
+            <p>After official approval, complete and return the <a href="documents/adoption-contract.pdf" target="_blank" rel="noopener">adoption contract</a>, then bring your fully-vetted new family member home!</p>
+          </li>
+        </ol>
+
+        <div class="cta-band" style="margin-top:3rem;">
+          <h2>Ready to apply?</h2>
+          <p>Click below to open our online adoption application. We review every application carefully and will be in touch soon.</p>
+          <a class="btn btn--light btn--lg" href="https://airtable.com/appaujP3UnYFLkfnw/shrwWYoKGmnW3tB7M" target="_blank" rel="noopener">Start Adoption Application</a>
+        </div>
+
+        <div class="info-block" style="max-width:720px;margin:3rem auto 0;">
+          <h3>Adoption contract</h3>
+          <p>
+            The adoption contract is required, but <strong>only after your adoption has been officially approved</strong>.
+            Do not complete it until our team confirms your approval. When you're ready, download the contract,
+            fill it out, and return it as directed by your adoption coordinator.
+          </p>
+          <p style="margin-top:1rem;">
+            <a class="btn btn--outline" href="documents/adoption-contract.pdf" target="_blank" rel="noopener">Download Adoption Contract (PDF)</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cream">
+      <div class="container split">
+        <div class="split__content">
+          <span class="eyebrow" style="color:var(--color-accent);font-family:var(--font-head);font-weight:600;letter-spacing:0.12em;text-transform:uppercase;font-size:0.82rem;">Good To Know</span>
+          <h2>What to expect</h2>
+          <p>Every dog adopted from Road Dogg Rescue is spayed/neutered, up to date on vaccinations, and fully vetted before going home.</p>
+          <ul class="feature-list">
+            <li>Dogs need time to adjust to new homes, please allow your newly adopted dog 3 weeks to settle in.</li>
+            <li>Dogs live in real foster homes, so we know their personalities</li>
+            <li>Adoption fees help cover vetting and care for the next dog in need</li>
+            <li>We're here to support you before and after adoption</li>
+          </ul>
+        </div>
+        <div class="split__media">
+          <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=800&q=80" alt="Person adopting a happy dog" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img class="brand-logo" src="images/logo.png" alt="Road Dogg Rescue logo" />
+            <strong>Road Dogg Rescue</strong>
+          </div>
+          <p>A 501(c) nonprofit, 100% foster-based dog rescue based in Fort Walton Beach, Florida.</p>
+          <div class="social-row">
+            <a href="https://www.facebook.com/RoadDoggRescue" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="adopt.html">Adopt</a></li>
+            <li><a href="foster-volunteer.html">Foster &amp; Volunteer</a></li>
+            <li><a href="info.html">Information</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get In Touch</h4>
+          <ul class="footer-links">
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html#surrender">Surrender Request</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; <span id="year">2026</span> Road Dogg Rescue. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

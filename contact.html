@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Road Dogg Rescue</title>
+  <meta name="description" content="Get in touch with Road Dogg Rescue. Contact us with questions, or submit a surrender request." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="images/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Contact-page form styling (kept here since it's only used on this page) */
+    .form-field { margin-bottom: 1.1rem; }
+    .form-field label {
+      display: block;
+      font-family: var(--font-head);
+      font-weight: 500;
+      font-size: 0.95rem;
+      margin-bottom: 0.4rem;
+    }
+    .form-field input,
+    .form-field textarea,
+    .form-field select {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      font-family: var(--font-body);
+      font-size: 1rem;
+      color: var(--color-ink);
+      background: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+    .form-field input:focus,
+    .form-field textarea:focus,
+    .form-field select:focus {
+      outline: none;
+      border-color: var(--color-accent);
+      box-shadow: 0 0 0 3px rgba(31, 138, 122, 0.18);
+    }
+    .form-card {
+      background: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: var(--shadow-sm);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="nav__brand" href="index.html">
+        <img class="brand-logo" src="images/logo.png" alt="Road Dogg Rescue logo" />
+        <span class="nav__brand-name">Road Dogg Rescue <small>Fort Walton Beach, FL</small></span>
+      </a>
+      <button class="nav__toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="adopt.html">Adopt</a></li>
+        <li><a href="foster-volunteer.html">Foster &amp; Volunteer</a></li>
+        <li><a href="info.html">Information</a></li>
+        <li><a href="contact.html" class="is-active">Contact</a></li>
+        <li><a class="btn btn--primary" href="donate.html">Pay / Donate</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Contact Us</span>
+        <h1>We'd love to hear from you</h1>
+        <p>Questions about adopting, fostering, or volunteering? Reach out and we'll get back to you as soon as we can.</p>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container split" style="align-items:start;">
+        <div class="split__content">
+          <h2>Get in touch</h2>
+          <p>The fastest way to reach us is through Facebook or email. We're an all-volunteer team, so please allow a little time for a reply.</p>
+          <ul class="contact-list" style="margin-top:1.5rem;">
+            <li><span class="ico" aria-hidden="true">✉️</span> <span><strong>Email</strong><br><a href="mailto:Roaddoggrescue@gmail.com">Roaddoggrescue@gmail.com</a></span></li>
+            <li><span class="ico" aria-hidden="true">📍</span> <span><strong>Location</strong><br>1811 Lewis Turner Blvd.<br>Fort Walton Beach, FL 32547</span></li>
+            <li><span class="ico" aria-hidden="true">📘</span> <span><strong>Facebook</strong><br><a href="https://www.facebook.com/RoadDoggRescue" target="_blank" rel="noopener">Follow us on Facebook</a></span></li>
+          </ul>
+        </div>
+
+        <div class="form-card">
+          <h3>Send us a message</h3>
+          <!-- This form needs a form-handling service to actually send email.
+               Easiest free option: create a form at https://formspree.io and
+               paste your endpoint URL into the action="" attribute below.
+               Until then, the form will not submit anywhere. -->
+          <form action="#" method="POST">
+            <div class="form-field">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" />
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg" style="width:100%;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SURRENDER REQUEST ===================== -->
+    <section class="section section--cream" id="surrender">
+      <div class="container prose" style="margin:0 auto;">
+        <div class="section-head" style="text-align:left;margin-bottom:1.5rem;">
+          <span class="eyebrow">Surrender Request</span>
+          <h2>Need to surrender a dog?</h2>
+        </div>
+        <p>
+          We understand that surrendering a dog is never an easy decision. As a small,
+          foster-based rescue, our ability to take in dogs depends on available foster
+          space. Please submit a surrender request below and we'll respond as soon as we can.
+        </p>
+        <ul>
+          <li>Provide as much detail as possible about the dog (age, breed, temperament, medical history).</li>
+          <li>Include clear photos if you can.</li>
+          <li>Let us know your timeline and situation so we can prioritize urgent cases.</li>
+        </ul>
+        <div style="margin-top:1.5rem;">
+          <!-- REPLACE the href with your real surrender request form link, or point
+               it to an email like mailto:surrender@roaddoggrescue.com -->
+          <a class="btn btn--secondary btn--lg" href="#" target="_blank" rel="noopener">Submit a Surrender Request</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img class="brand-logo" src="images/logo.png" alt="Road Dogg Rescue logo" />
+            <strong>Road Dogg Rescue</strong>
+          </div>
+          <p>A 501(c) nonprofit, 100% foster-based dog rescue based in Fort Walton Beach, Florida.</p>
+          <div class="social-row">
+            <a href="https://www.facebook.com/RoadDoggRescue" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="adopt.html">Adopt</a></li>
+            <li><a href="foster-volunteer.html">Foster &amp; Volunteer</a></li>
+            <li><a href="info.html">Information</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get In Touch</h4>
+          <ul class="footer-links">
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html#surrender">Surrender Request</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; <span id="year">2026</span> Road Dogg Rescue. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

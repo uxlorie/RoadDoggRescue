@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Road Dogg Rescue | Foster-Based Dog Rescue in Fort Walton Beach, FL</title>
+  <meta name="description" content="Road Dogg Rescue is a 501(c) nonprofit, 100% foster-based dog rescue in Fort Walton Beach, FL. We save dogs from euthanasia and find them loving forever homes." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="images/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="nav__brand" href="index.html">
+        <img class="brand-logo" src="images/logo.png" alt="Road Dogg Rescue logo" />
+        <span class="nav__brand-name">
+          Road Dogg Rescue
+          <small>Fort Walton Beach, FL</small>
+        </span>
+      </a>
+
+      <button class="nav__toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html" class="is-active">Home</a></li>
+        <li><a href="adopt.html">Adopt</a></li>
+        <li><a href="foster-volunteer.html">Foster &amp; Volunteer</a></li>
+        <li><a href="info.html">Information</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="btn btn--primary" href="donate.html">Pay / Donate</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="hero__badge">🐾 501(c) Nonprofit &middot; 100% Foster-Based</span>
+          <h1>Every dog deserves a <span class="accent">second chance</span> at a forever home.</h1>
+          <p class="hero__lead">
+            Road Dogg Rescue saves dogs from euthanasia at kill shelters and gives
+            them the love, care, and vetting they need to thrive — all through our
+            network of dedicated foster homes and volunteers.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#available">Meet Our Dogs</a>
+            <a class="btn btn--outline btn--lg" href="foster-volunteer.html">Become a Foster</a>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <img
+            src="images/toby.jpg"
+            alt="Toby, a rescued dog looking toward the camera"
+            class="hero__photo" />
+          <div class="hero__stat">
+            <strong>Saved &amp; Loved</strong>
+            <span>Rescued from kill shelters since day one</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section section--white" id="about">
+      <div class="container split">
+        <div class="split__media">
+          <img src="images/frankie.jpg" alt="Frankie, a rescued dog looking at the camera" class="object-top" />
+        </div>
+        <div class="split__content">
+          <span class="section-head eyebrow" style="display:block;text-align:left;">About Us</span>
+          <h2>A loving network rescuing dogs, one foster at a time</h2>
+          <p>
+            We're a 501(c) nonprofit dedicated to saving dogs from being euthanized
+            in overcrowded kill shelters. As a 100% foster-based rescue, every dog in
+            our care lives in a real home — never a kennel — supported by our loving
+            network of volunteers.
+          </p>
+          <ul class="feature-list">
+            <li>A registered 501(c) non-profit organization</li>
+            <li>We save dogs from euthanasia at kill shelters</li>
+            <li>100% foster-based and volunteer-supported</li>
+            <li>We transport community dogs to the low-cost spay/neuter clinic</li>
+            <li>All animals are fully vetted and ready for their forever homes</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== AVAILABLE PUPS (Pawlytics) ===================== -->
+    <section class="section section--cream" id="available">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Available Pups</span>
+          <h2>Meet the dogs looking for a home</h2>
+          <p>
+            This list updates automatically from our adoption database. See a face you
+            love? Start an application and we'll be in touch!
+          </p>
+        </div>
+
+        <!-- ============================================================
+             PAWLYTICS LIVE PET LIST
+             This iframe pulls our adoptable dogs directly from Pawlytics
+             and updates automatically. To replace it later, paste a new
+             Pawlytics embed link into the src="" attribute below.
+             ============================================================ -->
+        <iframe
+          class="embed-frame"
+          title="Available dogs from Road Dogg Rescue"
+          loading="lazy"
+          src="https://app.pawlytics.com/public/pet-iframe?token=e261584d279ca8249dde1c86f67b5442d00d59351cc4ac57e95b14505034cdcd761237dc0340da7f877a026fad418c92471b209ee22473c795d8d545d100d9989e203c01cbfe4ce520da54fe823f36c37851b4188cef2a1c519ce39425f9d2c701f89996ccbca7defb816868d40692caea095b5d853d8f055d8802091c72e5d1bc1fd9e7d4ae570889931259208157320ac350f2ca3e35060a1e4e58cbafbe7273b8906b2b1b59f016953ad0c9bf895b02493da7e905510671e7c7ea7889c4d32d66bc0ca029e49d38920f56005404a6be01807591b0665c5e5cd48f6b84cffb17dd54f76df6cab3313ef9dd4beb3b43bce9d28441a8b54737effacd96135df3f0ebd5d24d53f1c6a34f15c1d01ed9f282aee90bb74079634c20bcd1e792c7ba46f8f462c73fa1362f01d2932601e56810e354a4f60559bfc895dd2d39bd8d3487d2f84259bbc78e28c027ef6deb363eee5e63063559c8192585824e617a81f10327699eb33d449fa5162ed1f7a5fb56cd2e27c53f8e4a039b82eea2711cebe04e45e8bbb5fdeb9aeec1bdeb84da610d6b2bcd8427ba04c1d9b18e3ca8b0e094fb1bfa1e36111ff8309a5287819b3b9ebb2adcbef25326c5984d22b3b4e516d0c18971e5c8e0f125e6f8207eb4709edffe4126bb9447ec20701146c3f5e48b1720685237da6f2bedea1201fdfb74789a4c382bd96445e051b2d66b3b2f44bc087b47621c42459386e0382ea8092d7a8a60b9e49623c62abf656b8ab1df37422d9d27a684d9510bb217f26507465b966379da1b3d485e82c1bf3ba34830dea40ca2e173058a4f1777de56a8eebf4d4de5f0a6ca179b8dafa1693ee14226e66fab424b8229ecafa79705b4325ff6c6723754a1babd64e8d2d738cb8225ead1b2a1f7ce842a9db9832409d1a60c66ae09d40672c016d9f544e6693621f741eda01dfd4accd0f2f84ac552f946f21e66cf32ee7026b6786a5df47e180679a5ed10e8552e4f2bd8f9e396ac48431db4192a5f&iv=1136165c5b3b2f722e5de2fe3e0d76dd">
+        </iframe>
+        <p class="embed-note">
+          Don't see the right match yet? New dogs arrive often — check back soon or
+          <a href="foster-volunteer.html">become a foster</a> to help more dogs.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== HOW TO HELP ===================== -->
+    <section class="section section--white">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Get Involved</span>
+          <h2>Ways you can help</h2>
+          <p>Every adoption, foster, and donation directly saves a life.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🏡</div>
+            <h3>Adopt</h3>
+            <p>Open your heart and home to a vetted, ready-to-love rescue dog.</p>
+            <p style="margin-top:1rem;"><a href="adopt.html">Start an application &rarr;</a></p>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🤝</div>
+            <h3>Foster &amp; Volunteer</h3>
+            <p>Give a dog a safe place to land while they wait for their forever family.</p>
+            <p style="margin-top:1rem;"><a href="foster-volunteer.html">Join our network &rarr;</a></p>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">💛</div>
+            <h3>Donate</h3>
+            <p>Fund vetting, transport, and care for dogs in need. Every dollar helps.</p>
+            <p style="margin-top:1rem;"><a href="donate.html">Make a gift &rarr;</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HAPPY TAILS ===================== -->
+    <section class="section section--cream" id="happy-tails">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Happy Tails</span>
+          <h2>Forever homes &amp; happy endings</h2>
+          <p>A few of the wonderful pups who found their families through Road Dogg Rescue.</p>
+        </div>
+        <!-- To add a new Happy Tail, copy one <article> block and update the
+             photo (images/ folder) and the name/description. -->
+        <div class="grid grid--4">
+          <article class="tail-card">
+            <div class="tail-card__img">
+              <img src="images/bowie.jpg" alt="Adopted dog Bowie" />
+            </div>
+            <div class="tail-card__body">
+              <h3>Bowie</h3>
+              <p>Now thriving in his forever home with a loving momma.</p>
+            </div>
+          </article>
+          <article class="tail-card">
+            <div class="tail-card__img">
+              <img src="images/flopsy.jpg" alt="Adopted dog Flopsy" />
+            </div>
+            <div class="tail-card__body">
+              <h3>Flopsy</h3>
+              <p>From shelter to spoiled — adopted and adored.</p>
+            </div>
+          </article>
+          <article class="tail-card">
+            <div class="tail-card__img">
+              <img src="images/bootsy.jpg" alt="Adopted dog Bootsy" class="object-top" />
+            </div>
+            <div class="tail-card__body">
+              <h3>Bootsy</h3>
+              <p>Found his perfect match and never looked back.</p>
+            </div>
+          </article>
+          <article class="tail-card">
+            <div class="tail-card__img">
+              <img src="images/chewbacca.jpg" alt="Adopted dog Chewbacca" />
+            </div>
+            <div class="tail-card__body">
+              <h3>Chewbacca</h3>
+              <p>Living his best life in his forever home.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA BAND ===================== -->
+    <section class="section section--white">
+      <div class="container">
+        <div class="cta-band">
+          <h2>Ready to change a life?</h2>
+          <p>
+            Whether you adopt, foster, volunteer, or donate, you become part of the
+            reason a dog gets a second chance. Join the Road Dogg Rescue family today.
+          </p>
+          <div class="hero__actions" style="justify-content:center;">
+            <a class="btn btn--light btn--lg" href="adopt.html">Adopt a Dog</a>
+            <a class="btn btn--secondary btn--lg" href="donate.html">Donate Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img class="brand-logo" src="images/logo.png" alt="Road Dogg Rescue logo" />
+            <strong>Road Dogg Rescue</strong>
+          </div>
+          <p>
+            A 501(c) nonprofit, 100% foster-based dog rescue based in Fort Walton
+            Beach, Florida. Saving dogs from euthanasia and finding them loving
+            forever homes.
+          </p>
+          <div class="social-row">
+            <a href="https://www.facebook.com/RoadDoggRescue" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="adopt.html">Adopt</a></li>
+            <li><a href="foster-volunteer.html">Foster &amp; Volunteer</a></li>
+            <li><a href="info.html">Information</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get In Touch</h4>
+          <ul class="footer-links">
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html#surrender">Surrender Request</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; <span id="year">2026</span> Road Dogg Rescue. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
