@@ -485,6 +485,27 @@ img { max-width: 100%; display: block; }
   }
 }
 
+.cta-band--events {
+  position: relative;
+  overflow: hidden;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cellipse cx='90' cy='58' rx='6' ry='8' transform='rotate(-18 90 58)'/%3E%3Cellipse cx='104' cy='52' rx='6' ry='8'/%3E%3Cellipse cx='118' cy='58' rx='6' ry='8' transform='rotate(18 118 58)'/%3E%3Cellipse cx='84' cy='72' rx='5' ry='7' transform='rotate(-38 84 72)'/%3E%3Cpath d='M104 70c-9 0-16 7.5-16 14.5 0 5.5 3.5 9.5 9 9.5 3.5 0 5.5-2 7-4 1.5 2 3.5 4 7 4 5.5 0 9-4 9-9.5C120 77.5 113 70 104 70z'/%3E%3C/g%3E%3C/svg%3E"),
+    linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-dark) 100%);
+  background-size: 180px 180px, auto;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.28),
+    inset 0 0 0 2px rgba(255, 255, 255, 0.16),
+    0 20px 48px rgba(212, 84, 43, 0.32);
+}
+.cta-band--events .btn--light {
+  color: var(--color-secondary-dark);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+.cta-band--events .btn--light:hover {
+  background: #fff7f3;
+  color: var(--color-secondary-dark);
+}
+
 /* ---- 11. Page header (interior pages) ----------------------------------- */
 .page-hero {
   background: linear-gradient(120deg, #eaf5f2 0%, #fdf3ed 100%);
