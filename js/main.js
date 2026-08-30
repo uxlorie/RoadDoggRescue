@@ -4,6 +4,7 @@
    Small, dependency-free helpers used on every page:
    1. Mobile navigation toggle (hamburger menu)
    2. Auto-update the footer copyright year
+   3. Vercel Web Analytics script
    ========================================================================== */
 
 (function () {
@@ -33,4 +34,15 @@
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
+
+  /* ---- 3. Vercel Web Analytics ------------------------------------------ */
+  window.va =
+    window.va ||
+    function () {
+      (window.vaq = window.vaq || []).push(arguments);
+    };
+  var analytics = document.createElement("script");
+  analytics.defer = true;
+  analytics.src = "/_vercel/insights/script.js";
+  document.head.appendChild(analytics);
 })();

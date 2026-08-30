@@ -51,6 +51,24 @@
       padding: 2rem;
       box-shadow: var(--shadow-sm);
     }
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0 1rem;
+    }
+    .form-field input[type="file"] {
+      padding: 0.6rem 0;
+      border: none;
+      box-shadow: none;
+    }
+    .form-note {
+      font-size: 0.9rem;
+      color: var(--color-muted, #5c6670);
+      margin-top: 0.35rem;
+    }
+    @media (max-width: 640px) {
+      .form-grid { grid-template-columns: 1fr; gap: 0; }
+    }
   </style>
 </head>
 <body>
@@ -127,25 +145,77 @@
 
     <!-- ===================== SURRENDER REQUEST ===================== -->
     <section class="section section--cream" id="surrender">
-      <div class="container prose" style="margin:0 auto;">
+      <div class="container" style="max-width:720px;margin:0 auto;">
         <div class="section-head" style="text-align:left;margin-bottom:1.5rem;">
           <span class="eyebrow">Surrender Request</span>
-          <h2>Need to surrender a dog?</h2>
+          <h2>Dog Surrender</h2>
         </div>
         <p>
-          We understand that surrendering a dog is never an easy decision. As a small,
-          foster-based rescue, our ability to take in dogs depends on available foster
-          space. Please submit a surrender request below and we'll respond as soon as we can.
+          Surrendering your dog should be a last resort. Please exhaust all other options before
+          resorting to surrendering. You can complete the surrender request form below and if we
+          have an available foster, we may be able to help you — but most of the time, we are
+          completely full and cannot accept surrenders. You cannot surrender a dog that you do not
+          legally own. If you found a stray dog, please contact animal control in your county.
         </p>
-        <ul>
-          <li>Provide as much detail as possible about the dog (age, breed, temperament, medical history).</li>
-          <li>Include clear photos if you can.</li>
-          <li>Let us know your timeline and situation so we can prioritize urgent cases.</li>
-        </ul>
-        <div style="margin-top:1.5rem;">
-          <!-- REPLACE the href with your real surrender request form link, or point
-               it to an email like mailto:surrender@roaddoggrescue.com -->
-          <a class="btn btn--secondary btn--lg" href="#" target="_blank" rel="noopener">Submit a Surrender Request</a>
+
+        <div class="form-card" id="surrender-form" style="margin-top:2rem;">
+          <h3>Surrender Request</h3>
+          <p style="margin-bottom:1.5rem;">Complete all fields to the best of your knowledge.</p>
+          <!-- Set up a free form at https://formspree.io and paste your endpoint into action=""
+               (use a separate form from the contact message form so submissions stay organized). -->
+          <form action="#" method="POST" enctype="multipart/form-data">
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="surrender-first-name">First Name</label>
+                <input type="text" id="surrender-first-name" name="first_name" required />
+              </div>
+              <div class="form-field">
+                <label for="surrender-last-name">Last Name</label>
+                <input type="text" id="surrender-last-name" name="last_name" required />
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="surrender-email">Email</label>
+              <input type="email" id="surrender-email" name="email" required />
+            </div>
+            <div class="form-field">
+              <label for="surrender-phone">Phone</label>
+              <input type="tel" id="surrender-phone" name="phone" required />
+            </div>
+            <div class="form-field">
+              <label for="surrender-subject">Subject</label>
+              <input type="text" id="surrender-subject" name="subject" required />
+            </div>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="surrender-breed">Dog Breed</label>
+                <input type="text" id="surrender-breed" name="dog_breed" required />
+              </div>
+              <div class="form-field">
+                <label for="surrender-age">Dog Age</label>
+                <input type="text" id="surrender-age" name="dog_age" required />
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="surrender-weight">Dog Weight</label>
+              <input type="text" id="surrender-weight" name="dog_weight" required />
+            </div>
+            <div class="form-field">
+              <label for="surrender-personality">Describe the dog's personality and behavior</label>
+              <textarea id="surrender-personality" name="dog_personality" rows="4" required></textarea>
+            </div>
+            <div class="form-field">
+              <label for="surrender-reason">Reason for needing to surrender</label>
+              <textarea id="surrender-reason" name="surrender_reason" rows="4" required></textarea>
+            </div>
+            <div class="form-field">
+              <label for="surrender-photo">Upload a recent photo of the dog</label>
+              <input type="file" id="surrender-photo" name="dog_photo" accept="image/*" />
+              <p class="form-note">Upload supported file (max 15MB)</p>
+            </div>
+            <button type="submit" class="btn btn--secondary btn--lg" style="width:100%;">Submit Request</button>
+          </form>
+          <p class="form-note" style="margin-top:1rem;margin-bottom:0;">We will contact you, if we can help.</p>
         </div>
       </div>
     </section>
