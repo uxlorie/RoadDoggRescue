@@ -59,11 +59,16 @@ Throughout the pages there are placeholders marked with comments like `<!-- REPL
 - **Facebook** page link (in the footer of every page)
 - **Email, phone, address** (`contact.html`)
 
-### 5. Make the contact form actually send email
-The contact form on `contact.html` needs a free form service to deliver messages. The easiest option:
-1. Create a free form at [formspree.io](https://formspree.io).
-2. Copy the endpoint it gives you.
-3. In `contact.html`, find `<form action="#" method="POST">` and replace `#` with your Formspree address.
+### 5. Set up Formspree (contact + surrender forms)
+`contact.html` has two separate forms — general contact messages and surrender requests. Each needs its own Formspree form so submissions stay organized.
+
+1. Sign in at [formspree.io](https://formspree.io) (free account works for the contact form).
+2. Create a form named something like **Road Dogg — Contact** and set the notification email to `Roaddoggrescue@gmail.com`.
+3. Create a second form named **Road Dogg — Surrender** (same notification email).
+4. Open each form’s **Integration** tab and copy the form ID from the endpoint URL (`https://formspree.io/f/your-id-here`).
+5. Paste the IDs into `js/formspree-config.js`:
+   - `contact` — general “Send us a message” form
+   - `surrender` — surrender request form
 
 ---
 

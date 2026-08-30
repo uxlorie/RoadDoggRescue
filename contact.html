@@ -56,15 +56,26 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 0 1rem;
     }
-    .form-field input[type="file"] {
-      padding: 0.6rem 0;
-      border: none;
-      box-shadow: none;
-    }
     .form-note {
       font-size: 0.9rem;
       color: var(--color-muted, #5c6670);
       margin-top: 0.35rem;
+    }
+    .form-status {
+      margin-top: 1rem;
+      padding: 0.85rem 1rem;
+      border-radius: var(--radius);
+      font-size: 0.95rem;
+    }
+    .form-status--success {
+      background: #e8f5f1;
+      color: #1a6b5c;
+      border: 1px solid #b8dfd4;
+    }
+    .form-status--error {
+      background: #fdecea;
+      color: #8a2a1f;
+      border: 1px solid #f5c4bc;
     }
     @media (max-width: 640px) {
       .form-grid { grid-template-columns: 1fr; gap: 0; }
@@ -116,11 +127,8 @@
 
         <div class="form-card">
           <h3>Send us a message</h3>
-          <!-- This form needs a form-handling service to actually send email.
-               Easiest free option: create a form at https://formspree.io and
-               paste your endpoint URL into the action="" attribute below.
-               Until then, the form will not submit anywhere. -->
-          <form action="#" method="POST">
+          <form id="contact-form" action="https://formspree.io/f/xnpqjade" method="POST">
+            <input type="hidden" name="_subject" value="Road Dogg Rescue — Contact message" />
             <div class="form-field">
               <label for="name">Your name</label>
               <input type="text" id="name" name="name" required />
@@ -138,6 +146,7 @@
               <textarea id="message" name="message" rows="5" required></textarea>
             </div>
             <button type="submit" class="btn btn--primary btn--lg" style="width:100%;">Send Message</button>
+            <p class="form-status" hidden role="status" aria-live="polite"></p>
           </form>
         </div>
       </div>
@@ -161,9 +170,8 @@
         <div class="form-card" id="surrender-form" style="margin-top:2rem;">
           <h3>Surrender Request</h3>
           <p style="margin-bottom:1.5rem;">Complete all fields to the best of your knowledge.</p>
-          <!-- Set up a free form at https://formspree.io and paste your endpoint into action=""
-               (use a separate form from the contact message form so submissions stay organized). -->
-          <form action="#" method="POST" enctype="multipart/form-data">
+          <form id="surrender-form-form" action="https://formspree.io/f/xjyvgbrq" method="POST">
+            <input type="hidden" name="_subject" value="Road Dogg Rescue — Surrender request" />
             <div class="form-grid">
               <div class="form-field">
                 <label for="surrender-first-name">First Name</label>
@@ -208,12 +216,8 @@
               <label for="surrender-reason">Reason for needing to surrender</label>
               <textarea id="surrender-reason" name="surrender_reason" rows="4" required></textarea>
             </div>
-            <div class="form-field">
-              <label for="surrender-photo">Upload a recent photo of the dog</label>
-              <input type="file" id="surrender-photo" name="dog_photo" accept="image/*" />
-              <p class="form-note">Upload supported file (max 15MB)</p>
-            </div>
             <button type="submit" class="btn btn--secondary btn--lg" style="width:100%;">Submit Request</button>
+            <p class="form-status" hidden role="status" aria-live="polite"></p>
           </form>
           <p class="form-note" style="margin-top:1rem;margin-bottom:0;">We will contact you, if we can help.</p>
         </div>
@@ -256,6 +260,8 @@
     </div>
   </footer>
 
+  <script src="js/formspree-config.js"></script>
+  <script src="js/contact-forms.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
