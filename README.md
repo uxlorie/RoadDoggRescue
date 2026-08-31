@@ -81,6 +81,15 @@ Any of these host static sites for free. The simplest is **Netlify Drop**:
 3. Your site goes live instantly with a free web address.
 4. To use `roaddoggrescue.com`, point your domain to Netlify (their docs walk you through it).
 
+### After launch: Google Search Console
+Once your custom domain is live:
+
+1. Go to [Google Search Console](https://search.google.com/search-console) and add your property (`https://roaddoggrescue.com`).
+2. Verify ownership (DNS or HTML file — Netlify makes DNS verification easy).
+3. Open **Sitemaps** and submit: `https://roaddoggrescue.com/sitemap.xml`
+
+The site already includes `sitemap.xml`, `robots.txt`, Open Graph tags, JSON-LD, and canonical URLs using `roaddoggrescue.com`. If your live domain is different, search the project for `roaddoggrescue.com` and replace it everywhere.
+
 Other good free options: **GitHub Pages** and **Cloudflare Pages**.
 
 ---
