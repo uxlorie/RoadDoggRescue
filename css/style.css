@@ -606,6 +606,10 @@ img { max-width: 100%; display: block; }
 .info-block h3 { margin-bottom: 0.4rem; }
 .info-block p { margin-bottom: 0; color: var(--color-ink-soft); }
 
+#other-ways-to-give a {
+  font-weight: 700;
+}
+
 /* Steps (numbered) */
 .steps { counter-reset: step; list-style: none; padding: 0; margin: 0; }
 .steps li {
