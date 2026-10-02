@@ -54,7 +54,7 @@ The hero and "Happy Tails" photos currently use temporary stock images (web link
 Throughout the pages there are placeholders marked with comments like `<!-- REPLACE ... -->`. Update these with your real web addresses:
 - **Adoption application** link (`adopt.html`)
 - **Foster / volunteer sign-up** link (`foster-volunteer.html`)
-- **Donation** links — PayPal, Venmo, etc. (`donate.html`)
+- **Donation** links — Zeffy, PayPal, Venmo, etc. (`donate.html`)
 - **Surrender request** link (`contact.html`)
 - **Facebook** page link (in the footer of every page)
 - **Email, phone, address** (`contact.html`)
