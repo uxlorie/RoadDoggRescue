@@ -440,14 +440,7 @@ img { max-width: 100%; display: block; }
   top: 0;
 }
 
-/* ---- 9. Embed (Pawlytics iframe) ---------------------------------------- */
-.embed-frame {
-  width: 100%;
-  border: 4px solid #eee4f3;
-  border-radius: 32px;
-  min-height: 1300px;
-  background: var(--color-white);
-}
+/* ---- 9. Embed (Pawlytics) ----------------------------------------------- */
 .embed-note {
   text-align: center;
   color: var(--color-ink-soft);

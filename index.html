@@ -155,16 +155,23 @@
 
         <!-- ============================================================
              PAWLYTICS LIVE PET LIST
-             This iframe pulls our adoptable dogs directly from Pawlytics
-             and updates automatically. To replace it later, paste a new
-             Pawlytics embed link into the src="" attribute below.
+             Pawlytics embed.js turns this container into the live pet
+             listing. To replace it later, paste a new Pawlytics embed
+             snippet in place of the div and script below.
              ============================================================ -->
-        <iframe
-          class="embed-frame"
-          title="Available dogs from Road Dogg Rescue"
-          loading="lazy"
-          src="https://app.pawlytics.com/public/pet-iframe?token=e261584d279ca8249dde1c86f67b5442d00d59351cc4ac57e95b14505034cdcd761237dc0340da7f877a026fad418c92471b209ee22473c795d8d545d100d9989e203c01cbfe4ce520da54fe823f36c37851b4188cef2a1c519ce39425f9d2c701f89996ccbca7defb816868d40692caea095b5d853d8f055d8802091c72e5d1bc1fd9e7d4ae570889931259208157320ac350f2ca3e35060a1e4e58cbafbe7273b8906b2b1b59f016953ad0c9bf895b02493da7e905510671e7c7ea7889c4d32d66bc0ca029e49d38920f56005404a6be01807591b0665c5e5cd48f6b84cffb17dd54f76df6cab3313ef9dd4beb3b43bce9d28441a8b54737effacd96135df3f0ebd5d24d53f1c6a34f15c1d01ed9f282aee90bb74079634c20bcd1e792c7ba46f8f462c73fa1362f01d2932601e56810e354a4f60559bfc895dd2d39bd8d3487d2f84259bbc78e28c027ef6deb363eee5e63063559c8192585824e617a81f10327699eb33d449fa5162ed1f7a5fb56cd2e27c53f8e4a039b82eea2711cebe04e45e8bbb5fdeb9aeec1bdeb84da610d6b2bcd8427ba04c1d9b18e3ca8b0e094fb1bfa1e36111ff8309a5287819b3b9ebb2adcbef25326c5984d22b3b4e516d0c18971e5c8e0f125e6f8207eb4709edffe4126bb9447ec20701146c3f5e48b1720685237da6f2bedea1201fdfb74789a4c382bd96445e051b2d66b3b2f44bc087b47621c42459386e0382ea8092d7a8a60b9e49623c62abf656b8ab1df37422d9d27a684d9510bb217f26507465b966379da1b3d485e82c1bf3ba34830dea40ca2e173058a4f1777de56a8eebf4d4de5f0a6ca179b8dafa1693ee14226e66fab424b8229ecafa79705b4325ff6c6723754a1babd64e8d2d738cb8225ead1b2a1f7ce842a9db9832409d1a60c66ae09d40672c016d9f544e6693621f741eda01dfd4accd0f2f84ac552f946f21e66cf32ee7026b6786a5df47e180679a5ed10e8552e4f2bd8f9e396ac48431db4192a5f&iv=1136165c5b3b2f722e5de2fe3e0d76dd">
-        </iframe>
+        <div
+          class="pawlytics-embed-container"
+          data-pawlytics-embed="true"
+          data-embed="https://api.pawlytics.com/public/pet-iframe?token=0cb009429ac84b3793f91dbc51d23d7d0bd5975b3e0399ac4c64f0c23ce2be5f525ba0330e23e4186d1fcca6420f73215a1ee905e70a59a3c301ec1ab2d59691ffa40a807ddfac4872a9edb25ce14f27312aacee802293c83724a51be594f8e7fc5bd0bdc545eeb7d5ba6238a05b7a124aa7e192b2d890d69e9b8fcc4a60c159d229639ba39328d1553d8f079772d827275c7cd81db51f851409d040494646628f2270e05fb1992ae2a0389156868ce219b99570ddf1e2a4a26da89c26f13eeddd21de91bb13e5c9b3241eb9cd57c332147e638623026353cce4c031f80b9cfa4d04d40d5e719b36cf012d9de7e807fa087b25ffa0ed240874c0e54c0cabdc37d28b6602e90eb7f9de3385513106beb88372821b64bd1b172f05af717c9344ea2ce36cb2025209fa917480811fbeab8f6b309fb84df08bd4c8f1f99ffdd0503aff758120c50bd65862f28b5f17f9a42acd19afde34dd385685f70f3ac8c7aed0ea1f134685a10380201fe6ce7cbc652afb031ffaf4397b5cf62f072d2fd1843f011e9c02305c24cf3f9b21ec6169eee604fdbd013eb18f7e769d233f201f422707891d7a540414d18e022cc4b668b930b67bd16d402b055bb2fe2082e215c94cea65e041590cc71c923ae46b34aff7ec6900e1f8eaf5980775ee875919d84aab9f6e41a4c8b518a0e3c87e80cacc3464c503c412287a82d2b80d0f9473f8eec4e3a0fed6a73ead1a60f102dacd4e6e38356bfaf78851f1742243a54fcaa72ec490517a047f52fdf8b3dac8330defa10c9952f2b751dec9b61e803b97492669ddb5bc1e63c8b740d34ffc69877007542e3b93df53f73e764e626d9afd39eec7a12f6dcce498372e0b01ac27369dd45b3caf6c347b56daa2a4a1ae12f5e6bc9ee5db9be6641a354dcfe219dc8be9614e5dc81b0918d8ee5c413d4ec1a976829019d03159e4ade2a88f5b0c01ddc585cc4725b8ac1aa742264b4e511377b758187349725ffa0f32d8cf9169f91ac42aaf75&amp;iv=8cdc57bbd0d0ef7876d364e8b1697d44"
+          data-title="Adoptable Pets"
+          data-width="100%"
+          data-height="auto"
+          data-min-height="400"
+          data-border="4px solid #eee4f3"
+          data-border-radius="32px"
+          style="width:100%"
+        ></div>
+        <script>(function(w,d,s,id){if(d.getElementById(id))return;var js=d.createElement(s);js.id=id;js.src="https://api.pawlytics.com/embed.js";var fjs=d.getElementsByTagName(s)[0];fjs.parentNode.insertBefore(js,fjs);})(window,document,'script','pawlytics-embedjs');</script>
         <p class="embed-note">
           Don't see the right match yet? New dogs arrive often — check back soon or
           <a href="foster-volunteer.html">become a foster</a> to help more dogs.
